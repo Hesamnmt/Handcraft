@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+}
+.full-screen {
+    direction: rtl;
+    font: optional;
+    font-size: large;
+    margin: 1%;
+}
+
+.tittle {
+    display: flex;
+    margin: 30px;
+}
+
+.tittle p {
+    font-weight: 900;
+    font-style: bold;
+    font: arial;
+}
+
+.tittle img {
+    margin: 5px;
+    padding: 5px;
+}
+
+p {
+    margin: 5px;
+    padding: 5px;
+}
+
+.top-nav {
+    overflow: hidden;
+    direction: ltr;
+    background-color: #1a1dad;
+    margin-bottom: 1%;
+}
+
+.top-nav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    direction: rtl;
+}
+
+.top-nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* .top-nav a.active {
+    background-color: #e8a334;
+    color: rgb(0, 0, 0);
+} */
+
+.top-nav a.menu-profile {
+    float: left;
+    background-color: #e8a334;
+    color: rgb(0, 0, 0);
+}
+
+.top-nav a.menu-profile:hover {
+    background-color: #ef0a0a;
+    color: rgb(15, 30, 192);
+}
+
+.body-container {
+    display: flex;
+}
+
+.inner-left {
+    margin: 5px;
+    flex: 30%;
+}
+
+.inner-left p{
+    margin: 5px;
+    font-size: small;
+}
+
+.inner-left img {
+    margin : 4px;
+}
+
+.inner-right {
+    margin: 5px;
+    display: flex;
+    flex: 70%;
+    flex-direction: column;
+}
+
+.inner-right-up {
+    display: flex;
+
+}
+
+.inner-right-up-left {
+    flex:85%;
+}
+
+.inner-right-up-left #first-tittle{
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+.inner-right-up-right {
+    flex:15%;
+
+}
+
+.inner-right-down {
+}
+
+.right-menu a {
+    color: #45a917;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.right-menu a:hover {
+    background-color: #3a864f;
+    color: rgb(0, 255, 72);
+}
+
+.news-up {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    /* flex-direction: column; */
+}
+
+.news-down {
+    display: flex;
+}
+
+.news-up-right {
+    flex: 50%;
+    /* margin: 5px; */
+}
+
+.news-up-left {
+    display: flex;
+    flex: 50%;
+}
+
+.news-up-small{
+    margin: 5px;
+    flex: 50%;
+    width : 50vw;
+    overflow: hidden;
+}
+.news-up-small-img{
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+@media screen and (min-width:992px){
+    .news-up-left{
+        flex: 100%;
+    }
+}
+
+.tittle-zn {
+    padding-top: 20px;
+}
+
+.news-down{
+    display: flex;
+}
+
+.news-down-small{
+    flex: 25%;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+.photo-down{
+    border-radius: 8px;
+}
+
+.last-news {
+    display: flex;
+}
+
+.last-news-right-item {
+    flex: 85%;
+    flex-direction: row;
+    float: right;
+}
+
+.last-news-center{
+    flex: 15%;
+    float: left;
+}
+
+
+.news-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.last-news-right-item {
+    display: flex;
+    margin: 10px 0 5px 0;
+}
+
+/* .borde {
+    background-color: #ef0a0a;
+} */
+
+.last-news-center .readest-news{
+    margin: 10px;
+}
+
+.last-news-center .readest-news a{
+    background-color: #6e8f77;
+}
+
+.last-news-right-item-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.last-news-right-item-text .tittle p {
+    font-weight: 900;
+    font-style: bold;
+    font: arial;
+}
+
+.last-news-right-item .last-news-right-item-text .time p {
+    font-size: small;
+    color: #e8a334;
+
+}
+
+.last-news-right-item-text .tittle {
+    flex:70%;
+}
+
+.last-news-right-item-text .time {
+    flex:30%;
+
+}
+
+
+
+
+
+
+
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+
+  @media screen and (max-width:1024px) {
+    .body-container {
+        flex-direction: column;
+    }
+
+    .inner-left {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .last-news {
+        margin-top: 2rem;    
+    }
+}
+
+  @media screen and (max-width:768px) {
+    
+    .inner-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .last-news {
+        margin-top: 4rem; 
+        flex-direction: column;   
+    }
+  }
+
+  @media(max-width:520px){
+    .main-img{
+        width: 100%;
+    }
+  }
